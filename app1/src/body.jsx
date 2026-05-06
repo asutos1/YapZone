@@ -3,7 +3,6 @@ import "./body.css";
 function Body() {
     return (
         <main>
-            <hr />
             <h1>Welcome <span>to</span> YapZone..!!</h1>
             <p>YapZone is your unfiltered space to chat with anyone, anywhere — real-time rooms, group chats, direct threads, no noise.</p>
             <div className="buttons">

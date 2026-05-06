@@ -1,7 +1,7 @@
 import "./contact.css";
 function Contact() {
     return (
-        <div className="contact-section">
+        <div className="contact-section" id="contact">
             <div className="leftside">
                 <h3>Contact</h3>
                 <h2>Got Something<br />to Say?</h2>
