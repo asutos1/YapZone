@@ -1,11 +1,14 @@
 import Header from "./Header";
 import Body from "./body";
+import SignUp from "./Form/SignUp";
 
 function App() {
   return (
     <div>
-      <Header/>
-      <Body/>
+      <SignUp/>
+      {/* <Header/>
+      <Body/> */}
+      
     </div>
   );
 }

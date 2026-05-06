@@ -1,0 +1,90 @@
+body{
+    background-color: #fff;
+    
+}
+.Container{
+    width: 80%;
+    height: 80%;
+    background-color: #949FFE;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 10px -10px  rgb(183, 175, 175,0.2);
+}
+.LeftPanel {
+
+    margin: 40px;
+    width: 50%;
+    width: 50%;
+    font-weight: 600;
+    
+    
+    background-color: #949FFE;
+    color: blue;
+}
+
+
+.T1{
+    
+    font-size: 40px;
+}
+.Title{
+    
+    /* border: 2px solid red; */
+    display: flex;
+    
+    
+}
+.TitleText{
+    font-family:'Times New Roman', Times, serif;
+    padding:  0px 5px;
+    /* border: 2px solid red; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Description{
+    width: 100%;
+    /* text-align: justify; */
+    /* text-align-last: justify; */
+    font-size: 35px;
+    
+    /* text-align: left; */
+    margin:20px 0;
+    /* border: 2px solid red; */
+    display: block;
+    box-sizing: border-box;
+    
+}
+.SignUpLeftPanelImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 20% 0;
+    
+}
+.SignUpLeftPanelImg img{
+   width: 100%;
+
+}
+
+
+
+
+.RightPanel{
+    background-color: #ffffff;
+    margin: 0;
+    width: 50%;
+    
+    
+}.RightPanel h1{
+    color: #000;
+}
+
