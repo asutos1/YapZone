@@ -1,0 +1,148 @@
+.contact-section {
+    background-color: #15141d;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+    gap: 3em;
+    width: 100%;
+    padding: 5em 6em;
+}
+
+.leftside {
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    line-height: 2em;
+}
+
+.leftside h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 5em;
+}
+
+.leftside h3 {
+    color: rgb(231, 123, 123);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.leftside p {
+    color: #7a7890;
+    font-weight: 300;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.card {
+    background-color: black;
+    border: 0.3px solid #605e70b8;
+    border-radius: 14px;
+    padding: 0.5em 1.5em;
+    line-height: 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(96, 94, 176, 0.3);
+}
+
+.card h4 {
+    color: white;
+    font-size: 18px;
+}
+
+.card p {
+    color: rgb(109, 107, 107);
+    font-size: 14px;
+}
+
+.rightside {
+    background-color: black;
+    border: 0.3px solid #605e70b8;
+    border-radius: 14px;
+    margin: 1.2em 3em;
+    padding: 1em;
+    
+    
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-size: 0.82rem;
+    color: #7a7890;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea{
+    width: 100%;
+    background: #1b1b28;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    color: #f0ede8;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgba(255, 92, 92, 0.5);
+    box-shadow: 0 0 0 3px rgba(255, 92, 92, 0.08);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.btn-submit {
+    background-color: #ff5d5d;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    box-shadow: -0.5px 5px 25px rgba(255, 93, 93, 0.6);
+}   
+
+
+
+@media (max-width: 768px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+        padding: 3em 2em;
+    }
+
+    .rightside {
+        margin: 1em 0;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
