@@ -1,12 +1,18 @@
 import "./leftpanel.css"
 
-function leftpanel(){
+function LeftPanel(){
     return(
         <div className="leftpanel">
+            <div className="searchbar">
+                <input type="text" placeholder="Search..." />
+            </div>
             <ul>
-                <li>Hello</li>
-                <li>Apple</li>
-                <li>Ball</li>
+                <li>
+                    <div className="pp"></div>Ninja Hattori</li>
+                <li>
+                    <div className="pp"></div>John Snow</li>
+                <li>
+                    <div className="pp"></div>Robb Stark</li>
             </ul>
         </div>
 
@@ -14,4 +20,4 @@ function leftpanel(){
     );
 }
 
-export default leftpanel;
+export default LeftPanel;

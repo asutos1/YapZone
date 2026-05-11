@@ -14,7 +14,7 @@ nav{
     align-items: center;
 }
 
-ul{
+nav ul{
     display: flex;
     align-items: center;
     list-style: none;

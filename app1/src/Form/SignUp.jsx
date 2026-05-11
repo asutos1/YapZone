@@ -20,16 +20,12 @@ function SignUp(){
         }
     }
     return (
-        <div>
+        <div className='main'>
             <div className="Container">
                 <div className="LeftPanel">
                     
                     <div className='Title'>
-                        <label className='T1'>5</label>
-                        <div className='TitleText'>
-                            <label htmlFor="">Tips</label>
-                            <label htmlFor="">here</label>
-                        </div>
+                        <h2>Yap<span>Zone</span></h2>
                     </div>
                     
                     <p className='Description'>
@@ -54,7 +50,7 @@ function SignUp(){
                         <label className='Password'>
                             <input type={InputType} placeholder='Password' />
                             <div className='ShowPasswordIcon' onClick={ToggleIcon}>
-                                <img src={Icon} alt="ShowIcon" width={20} />
+                                <img src={Icon} alt="ShowIcon" width={20}  />
                             </div>
                         </label>
                         <label className='CheckBox'>

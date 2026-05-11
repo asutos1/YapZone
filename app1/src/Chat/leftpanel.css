@@ -1,0 +1,40 @@
+.leftpanel{
+    width: 30%;
+    height: 100vh;
+    background-color: #15141d;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 14px;
+    border-top: 0.2px solid white;
+}
+
+.leftpanel ul{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 0.01em;
+}
+.leftpanel ul li{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin: 1em;
+
+}
+.pp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ee7171;
+}
+.searchbar{
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

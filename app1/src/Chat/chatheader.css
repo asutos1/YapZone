@@ -4,31 +4,14 @@
     box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 40%;
-   
-    background: rgb(46, 126, 197);
+.leftheader{
+    background-color: #15141d;
+    width: 30%;
+    margin-right: 1px;
 }
-
-
-.username{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-.dp{
-    background-color: red;
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 1.5em;
-    height: 1.5em;
-}
-.name{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
-    font-weight: 400;
+#logo h2{
+    color: white;
+    padding: 0.4em 1.2em;
+    cursor: pointer;
+    
 }
