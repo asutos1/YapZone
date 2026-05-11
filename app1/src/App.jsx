@@ -1,23 +1,31 @@
 import Header from "./Header";
 import Body from "./body";
-
+import ChatHeader from "./Chat/chatheader";
+import leftpanel from "./Chat/leftpanel";
 import SignUp from "./Form/SignUp";
-
 import Contact from "./contact";
 import Footer from "./footer";
+import ChatBox from "./Chat/ChatBox";
 
 
 function App() {
   return (
     <div>
+      <ChatHeader/>
+      <leftpanel/>
 
-      <SignUp/>
+      {/* <SignUp/> */}
       {/* <Header/>       
       <Body/>
-<<<<<<< HEAD
       <Contact/>
       <Footer/>
       <Contact/> */}
+      {/* <SignUp/>
+      <Header/>
+      <Body/>
+      <Contact/> */} 
+      {/* <ChatBox></ChatBox> */}
+
 
     </div>
   );
