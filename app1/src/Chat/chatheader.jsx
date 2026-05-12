@@ -1,10 +1,10 @@
 import "./chatheader.css"
 
-function ChatHeader(){
+function ChatHeader({ toggleLogin }) {
     return(
         <div className="leftheader">
             <div id="logo">
-                <h2>Yap<span>Zone</span></h2>
+                <h2 onClick={toggleLogin}>Yap<span>Zone</span></h2>
             </div>
         </div>
             

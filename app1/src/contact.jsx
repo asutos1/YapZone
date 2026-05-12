@@ -20,30 +20,30 @@ function Contact() {
             </div>
 
             <div className="rightside">
-                <div class="contact-form reveal">
-                    <div class="form-row">
-                        <div class="form-group">
+                <div className="contact-form reveal">
+                    <div className="form-row">
+                        <div className="form-group">
                             <label>First Name</label>
                             <input type="text" placeholder="Alex" />
                         </div>
                         
-                        <div class="form-group">
+                        <div className="form-group">
                             <label>Last Name</label>
                             <input type="text" placeholder="Sharma" />
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <label>Email</label>
                         <input type="email" placeholder="you@example.com" />
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <label>Message</label>
                         <textarea placeholder="What's on your mind? (Don't hold back — this is YapZone after all.)"></textarea>
                     </div>
                     
-                    <button class="btn-submit">
+                    <button className="btn-submit">
                         Send It
                     </button>
                 </div>

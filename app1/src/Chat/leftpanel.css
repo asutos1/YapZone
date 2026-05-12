@@ -24,7 +24,11 @@
     gap: 0.5rem;
     cursor: pointer;
     margin: 1em;
+    padding: 12px 20px;
 
+}
+.leftpanel ul li:hover{
+    background-color: rgba(255, 255, 255, 0.059);
 }
 .pp{
     width: 40px;

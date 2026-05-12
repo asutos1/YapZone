@@ -14,25 +14,25 @@ function Body() {
            
             <div className="text-bubbles">
 
-                <div class="bubble">
-                    <div class="avatar av-a">A</div>
+                <div className="bubble">
+                    <div className="avatar av-a">A</div>
                     <div>
-                        <div class="bubble-msg">yo this app is actually 🔥 everyone's here lmao</div>
-                        <div class="bubble-meta">Alex · just now</div>
+                        <div className="bubble-msg">yo this app is actually 🔥 everyone's here lmao</div>
+                        <div className="bubble-meta">Alex · just now</div>
                     </div>
                 </div>
-                <div class="bubble right">
-                    <div class="avatar av-b">K</div>
+                <div className="bubble right">
+                    <div className="avatar av-b">K</div>
                     <div>
-                        <div class="bubble-msg">ikr? joined the music room and it's been non-stop 🎵</div>
-                        <div class="bubble-meta">Kai · 1 min ago</div>
+                        <div className="bubble-msg">ikr? joined the music room and it's been non-stop 🎵</div>
+                        <div className="bubble-meta">Kai · 1 min ago</div>
                     </div>
                 </div>
-                <div class="bubble center">
-                    <div class="avatar av-c">M</div>
+                <div className="bubble center">
+                    <div className="avatar av-c">M</div>
                     <div>
-                        <div class="bubble-msg">YapZone &gt; everything else, no cap 💯</div>
-                        <div class="bubble-meta">Maya · 2 min ago</div>
+                        <div className="bubble-msg">YapZone &gt; everything else, no cap 💯</div>
+                        <div className="bubble-meta">Maya · 2 min ago</div>
                     </div>
                 </div>
             </div>

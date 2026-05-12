@@ -1,3 +1,5 @@
+
+import { useState } from "react";
 import Header from "./Header";
 import Body from "./body";
 import ChatHeader from "./Chat/chatheader";
@@ -8,25 +10,31 @@ import Footer from "./footer";
 import ChatBox from "./Chat/ChatBox";
 
 
-function App() {
-  return (
-    <div>
-      {/* <ChatHeader/>
-      <LeftPanel/> */}
 
-      <SignUp/>
-      {/* <Header/>       
-      <Body/>
-      <Contact/>
-      <Footer/>
-      <Contact/> */}
-      {/* <Header/>
-      <Body/>
-      <Contact/>  */}
+
+function App() {
+  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const toggleLogin = () => {
+    setIsLoggedIn(!isLoggedIn);
+  };
+  return (
+    <>
+      {isLoggedIn ? 
+          <>  
+            <ChatHeader toggleLogin={toggleLogin}/> <LeftPanel/>
+          </> : 
+          <>
+            <Header toggleLogin={toggleLogin}/> <Body/> <Contact/> <Footer/>
+          </>
+      }
+
+
+      {/* <SignUp/> */}
       {/* <ChatBox/>*/}
 
 
-    </div>
+    </>
   );
 }
 export default App;
