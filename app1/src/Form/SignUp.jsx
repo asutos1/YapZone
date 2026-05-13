@@ -1,4 +1,4 @@
-import './SignUp.css';
+import styles from './SignUp.module.css';
 import Img from '../assets/Img.svg';
 import PassShowIcon from '../assets/passshow.svg'
 import PassHideIcon from '../assets/PassHide.svg'
@@ -20,44 +20,44 @@ function SignUp(){
         }
     }
     return (
-        <div className='main'>
-            <div className="Container">
+        <div className={styles.main}>
+            <div className={styles.Container}>
                 <div className="LeftPanel">
                     
-                    <div className='Title'>
+                    <div className={styles.Title}>
                         <h2>Yap<span>Zone</span></h2>
                     </div>
                     
-                    <p className='Description'>
+                    <p className={styles.Description}>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <div className="SignUpLeftPanelImg">
+                    <div className={styles.SignUpLeftPanelImg}>
                         <img src={Img} alt="Img not displayed" width={200} />
                     </div>
                 </div>
 
 
 
-                <div className="RightPanel">
-                    <div className='RightPanelTitle'>
+                <div className={styles.RightPanel}>
+                    <div className={styles.RightPanelTitle}>
                         <p>
                             Create Account
                         </p>
                     </div>
-                    <form className='Form' action="">
-                        <label className='Name'><input type="text" placeholder='Name' /></label>
-                        <label className='Name'><input type="email" placeholder='Email Address' /></label>
-                        <label className='Password'>
+                    <form className={styles.Form} action="">
+                        <label ><input type="text" placeholder='Name' /></label>
+                        <label ><input type="email" placeholder='Email Address' /></label>
+                        <label className={styles.Password}>
                             <input type={InputType} placeholder='Password' />
-                            <div className='ShowPasswordIcon' onClick={ToggleIcon}>
+                            <div className={styles.ShowPasswordIcon} onClick={ToggleIcon}>
                                 <img src={Icon} alt="ShowIcon" width={20}  />
                             </div>
                         </label>
-                        <label className='CheckBox'>
+                        <label className={styles.CheckBox}>
                             <input type="checkbox"  /> 
                             <span>I agree to the terms of services and privacy policy</span>
                         </label>
-                        <label className='SubmitBtn'><button type="submit">Sign Up</button></label>
+                        <label className={styles.SubmitBtn}><button type="submit">Sign Up</button></label>
 
 
                         

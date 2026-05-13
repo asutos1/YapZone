@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 div.main{
     font-family: "Poppins", sans-serif;
@@ -91,6 +86,10 @@ div.main{
 }
 
 /* title */
+.Title{
+    /* border: 2px solid red; */
+    margin: 20px 2px;
+}
 
 .Title h2{
     color: white;
@@ -129,6 +128,7 @@ div.main{
     height: auto;
 
     opacity: 0.95;
+    mix-blend-mode: multiply;
 }
 
 /* =========================
@@ -187,7 +187,7 @@ div.main{
 
     padding: 15px 18px;
 
-    background: rgba(255,255,255,0.04);
+    background: rgba(132, 47, 47, 0.04);
 
     border: 1px solid rgba(255,255,255,0.06);
 
