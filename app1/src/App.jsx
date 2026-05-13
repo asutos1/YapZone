@@ -14,7 +14,7 @@ import ChatBox from "./Chat/ChatBox";
 
 function App() {
   
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const toggleLogin = () => {
     setIsLoggedIn(!isLoggedIn);
   };
