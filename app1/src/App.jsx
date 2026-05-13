@@ -14,19 +14,41 @@ import ChatBox from "./Chat/ChatBox";
 
 function App() {
   
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const toggleLogin = () => {
-    setIsLoggedIn(!isLoggedIn);
-  };
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
+
+  const signupState = () => {
+    setShowSignUp(true);
+    setIsLoggedIn(true);
+  }
+
+  function startYapping() {
+
+    if (isLoggedIn) {
+      return;
+    }
+
+    setShowSignUp(true);
+}
+
+
+
   return (
     <>
       {isLoggedIn ? 
-          <>  
-            <ChatHeader toggleLogin={toggleLogin}/> <LeftPanel/>
-          </> : 
-          <>
-            <Header toggleLogin={toggleLogin}/> <Body/> <Contact/> <Footer/>
-          </>
+          (<>  
+
+            <ChatHeader/> 
+            <LeftPanel/>
+
+          </>) : showSignUp ? (<SignUp signupState={signupState}/>) :
+          
+          (<>
+            <Header startYapping={startYapping}/> 
+            <Body startYapping={startYapping}/> 
+            <Contact/> 
+            <Footer/>
+          </>)
       }
 
 

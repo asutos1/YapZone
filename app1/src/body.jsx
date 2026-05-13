@@ -1,12 +1,18 @@
 import "./body.css";
+import SignUp from "./Form/SignUp";
 
-function Body() {
+
+function Body({startYapping}) {
+
+
+    
+
     return (
         <main>
             <h1>Welcome <span>to</span> YapZone..!!</h1>
             <p>YapZone is your unfiltered space to chat with anyone, anywhere — real-time rooms, group chats, direct threads, no noise.</p>
             <div className="buttons">
-                <button className="start">Start Yapping</button>
+                <button onClick={startYapping} className="start">Start Yapping</button>
                 <button className="more">Learn More</button>
             </div>
            

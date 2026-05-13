@@ -6,7 +6,7 @@ import PassHideIcon from '../assets/PassHide.svg'
 import { useState } from 'react';
 
 
-function SignUp(){
+function SignUp( {signupState} ) {
     const[Icon,setIcon] = useState(PassShowIcon);
     const[InputType, SetInputType] = useState('password');
     const ToggleIcon = () =>{
@@ -57,7 +57,7 @@ function SignUp(){
                             <input type="checkbox"  /> 
                             <span>I agree to the terms of services and privacy policy</span>
                         </label>
-                        <label className='SubmitBtn'><button type="submit">Sign Up</button></label>
+                        <label className='SubmitBtn'><button onClick={signupState} type="submit">Sign Up</button></label>
 
 
                         
