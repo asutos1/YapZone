@@ -16,26 +16,29 @@ function App() {
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+  const [enterChat, setEnterChat] = useState(false);
+
 
   const signupState = () => {
-    setShowSignUp(true);
     setIsLoggedIn(true);
+    setEnterChat(true);
   }
 
   function startYapping() {
 
     if (isLoggedIn) {
-      return;
+      setEnterChat(true);
     }
-
-    setShowSignUp(true);
-}
+    else{
+        setShowSignUp(true);
+    }
+  }
 
 
 
   return (
     <>
-      {isLoggedIn ? 
+      {enterChat ? 
           (<>  
 
             <ChatHeader/> 
