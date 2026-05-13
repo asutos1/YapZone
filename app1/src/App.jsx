@@ -14,27 +14,9 @@ import ChatBox from "./Chat/ChatBox";
 
 function App() {
   
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const toggleLogin = () => {
-    setIsLoggedIn(!isLoggedIn);
-  };
+  
   return (
-    <>
-      {isLoggedIn ? 
-          <>  
-            <ChatHeader toggleLogin={toggleLogin}/> <LeftPanel/>
-          </> : 
-          <>
-            <Header toggleLogin={toggleLogin}/> <Body/> <Contact/> <Footer/>
-          </>
-      }
-
-
-      {/* <SignUp/> */}
-      {/* <ChatBox/>*/}
-
-
-    </>
+    <ChatBox></ChatBox>
   );
 }
 export default App;
